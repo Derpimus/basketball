@@ -4,19 +4,21 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Hello, world!</title>
+    <script src="https://kit.fontawesome.com/e9676c2019.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!--Nawigacja******************************************************************************************* -->
-    <div id="navbar">
+    <div class="sticky" id="navbar">
       <a href="#home">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
     </div>
 
-    <!--Slider******************************************************************************************* -->
+    <!--Slider bez JS******************************************************************************************* -->
     <div class="slider">
       <div class="slide">
       </div>
@@ -29,7 +31,63 @@
       <div class="slide">
       </div>
     </div>
-   
+   <!--galeria miniaturek******************************************************************************************* -->
+    <div class="grid-container">
+      <img src="img/photo1.jpg" alt="">
+      <img src="img/photo2.jpg" alt="">
+      <img src="img/photo3.jpg" alt="">
+      <img src="img/photo4.jpg" alt="">
+      <img src="img/photo5.jpg" alt="">
+      <img src="img/photo6.jpg" alt="">
+      <img src="img/photo7.jpg" alt="">
+      <img src="img/photo8.jpg" alt="">
+    </div>
+   <!--formularz******************************************************************************************* -->
+   <div class="form-wrapper">
+    <div class="form-container">
+      <div class="form">
+        
+        <form>
+          <p>Contact me</p>
+          <label></label>
+          <input type="text"  name="FirstName" placeholder="Your name..">
+      
+          <label></label>
+          <input type="text"  name="LastName" placeholder="Your last name..">
+
+          <label></label>
+          <input type="text"  name="PhoneNumber" placeholder="Your phone number..">
+      
+          <label for="country"></label>
+          <select name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="info">
+        <h>Contact info</h>
+        <p>We are welcome to recieve any suggestion</p>
+        <div class="info-wrapper">
+          <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+          <div class="text"><p>Adress:</p> <p1>Gdansk 80-001 ul.Internetowa</p1></div>
+  
+          <div class="icon"><i class="fas fa-mobile"></i></div>
+          <div class="text"><p>Phone:</p> <p1>+48 123 456 789</p1></div>
+
+          <div class="icon"><i class="far fa-envelope"></i></div>
+          <div class="text"><p>Email:</p> <a href = "mailto:   example.mail@gmail.com">  example.mail@gmail.com</a></div>
+
+          <div class="icon"><i class="fas fa-at"></i></div>
+          <div class="text"><p>Website:</p> <a href="examplewebsite.pl">examplewebsite.pl</a></div>
+        </div>
+        
+      </div>
+    </div>
+   </div>
     <script src="main.js"></script>
   </body>
 </html>
